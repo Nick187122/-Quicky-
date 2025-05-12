@@ -21,6 +21,23 @@ if (stars.length > 0) {
         });
     });
 }
+if (submitRating) {
+    submitRating.addEventListener('click', function() {
+        const rating = document.getElementById('selectedRating').value;
+        if (rating === "0") {
+            alert('Please select a rating');
+            return;
+        }
+        
+        alert('Thank you for your rating!');
+        window.location.href = "index.html"; // This is the line that redirects home
+        
+        // Reset stars
+        stars.forEach(star => star.classList.remove('active'));
+        document.getElementById('selectedRating').value = "0";
+        document.getElementById('review').value = "";
+    });
+}
 
 // Form submissions
 const complaintForm = document.getElementById('complaintForm');
