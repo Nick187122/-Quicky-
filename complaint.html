@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Complaint | Quicky Meat</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Quicky<span>Meat</span></div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vendors.html">Butchers</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="complaint.html">Complaints</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="complaint-form">
+            <h2>File a Complaint</h2>
+            <p>We value your feedback to improve our services</p>
+            
+            <form id="complaintForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="butcher">Butcher (if applicable)</label>
+                    <select id="butcher">
+                        <option value="">-- Select butcher --</option>
+                        <option value="Kwa Maina's Butchery">Kwa Maina's Butchery</option>
+                        <option value="Mama Nia's Fresh Meat">Mama Nia's Fresh Meat</option>
+                        <option value="Bwana Asman's Halal Meat">Bwana Asman's Halal Meat</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Complaint Details</label>
+                    <textarea id="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Complaint</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Quicky Meat</h3>
+                    <p>Bringing Burma Market to you since 2023</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> 0742167151</p>
+                    <p><i class="fas fa-envelope"></i> info@quickymeat.co.ke</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Quicky Meat. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
